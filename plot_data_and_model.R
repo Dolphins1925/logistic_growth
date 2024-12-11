@@ -31,3 +31,4 @@ t <- 4980
 # Calculate population size at time t
 population_size <- N0 * exp(r * t)
 population_size
+

@@ -1,9 +1,9 @@
-# Load required package
-#library(ggplot2)
+# Load required package and install in the packages tab if needed
+
 library(ggplot2)
 
 # Parameters
-N0 <- 986.5075       # Initial population size
+N0 <- exp(6.8941709)      # Initial population size
 r <- 0.0100086       # Growth rate
 K <- 6e+10           # Carrying capacity
 time <- seq(0, 5000, by = 10) # Time points for plotting
