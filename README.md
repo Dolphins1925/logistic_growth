@@ -1,3 +1,12 @@
-Hello, I am doing code for a computer class. 
-Congratulations! Your repository with a reproducible analysis of logistic growth data is complete. You can add some final comments to the README.md file for any future users who come across your repo.
-Waiting for pull request to be accepted
+#INSERTING ANSWERS FOR ASSINGMENT#
+
+LINK TO REPRODUCIBLE RESEARCH HOMEWORK REPO: https://github.com/Dolphins1925/reproducible-research_homework/
+
+1. I used the experiment.csv file from the simulated experiment called “Logistic growth date” on the Open Science Framework's website (https://osf.io). Logistic growth is different to exponential growth because it has a carrying capacity, which has biological relevance as the maximum population size that can be supported in its ecology.  The raw data shows that at the beginning, population growth is slow, but then grows exponentially, and slows down to a constant size. When we look at this under a semi-log-transformed model (y-axis for population size log-transformed), we can see the exponential growth as a linear relationship until the population size remains constant at the end. We can perform the analysis on the linear relationship under the semi-log-transformed model to estimate the initial population size (N0), the growth rate (r), and the carrying capacity (k). 
+Under this model, we can plot this model to graphically show this relationship. We calculate N0, when t is small. Set t as a number below the carrying capacity and use the regtression equation, ln(N)=ln(N0)+rt to calculate ln(N0) as 6.8941709. Taking the exponential gives us N0= 986.5075. r can be shown in this model as 0.0100086. Both of these values are significant in this model. Using these values, we use the equation, N(t)=K+0⋅t, to give K as 6e+10 (also significant). We can insert these values into a plot and graphically show the logistic growth of this dataset. 
+
+2. Under an exponential model, population size is equal to N0 * e^(r * t). So when r=  0.0100086, N0 = 986.5075, and t= 4980, the population size is 4.370846e+24. At the same time and with the same values for r, t, and N0, the logistic growth model shows that the population size is at carrying capacity (6e+10), which is much smaller than in the exponential model. This is because the exponential model does not take into account any biological factors which produce the carrying capacity demonstrated in the logistic growth model. Under logistic growth, the population cannot grow beyond the carrying capacity, no matter how much time passes.
+
+3. R script is called **exponential_vs_logistic_graph.R**. It includes the same parameters that I described in the results section of the analysis. It defines both the logistic growth and exponential growth functions that I have described. I have created a ggplot to compare these models, using different colours to distinguish each model, and have used the theme.minimal function in R to make the graoh more readable. I have uploaded the graph to this repo as a png called **exponential_vs_logistic_graph.png** and it can be veiwed below.
+![image](https://github.com/user-attachments/assets/f1bdc063-fa7f-4c56-8fe8-cef117e645e4)
+
